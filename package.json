@@ -1,0 +1,55 @@
+{
+  "name": "essence",
+  "version": "0.0.1",
+  "description": "Essence UI for React",
+  "private": false,
+  "main": "dist/npm/es5/index.js",
+  "jsnext:main": "next.js",
+  "typings": "typings/index.d.ts",
+  "scripts": {
+    "start": "cd site && node run.js",
+    "typescript-test": "tsc --project typings/typing-tests",
+    "test": "flow check && BABEL_ENV=development jest",
+    "jest": "jest",
+    "lint": "eslint src libs site --quiet",
+    "build": "cd build/site && webpack --progress",
+    "prepublish": "./build/scripts/prepare.sh",
+    "postpublish": "./build/scripts/release.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/essencemike/Essence.git"
+  },
+  "keywords": [
+    "React",
+    "UI",
+    "react-components"
+  ],
+  "author": "IMike",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/essencemike/Essence/issues"
+  },
+  "homepage": "https://github.com/essencemike/Essence#readme",
+  "dependencies": {},
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.69.0",
+    "webpack": "^4.5.0"
+  },
+  "jest": {
+    "testRegex": "(/jest/.+\\.(js|jsx)$)|_test.jsx?$",
+    "testPathIgnorePatterns": [
+      "<rootDir>/tests",
+      "<rootDir>/dist"
+    ],
+    "moduleNameMapper": {
+      "\\.(png|eot|svg|ttf|woff|woff2)(\\?.+)?$": "<rootDir>/tests/jest/mock.js",
+      "\\.(css|scss)$": "identity-obj-proxy"
+    },
+    "setupTestFrameworkScriptFile": "<rootDir>/tests/jest/config.js"
+  }
+}

@@ -1,0 +1,3 @@
+{
+  "alert": "./src/alert/index.js"
+}

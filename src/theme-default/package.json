@@ -1,0 +1,35 @@
+{
+  "name": "essence-theme-default",
+  "version": "0.0.1",
+  "description": "Essence component default theme.",
+  "main": "lib/index.css",
+  "style": "lib/index.css",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "scripts": {
+    "build": "gulp build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/essencemike/theme-default.git"
+  },
+  "keywords": [
+    "Essence",
+    "theme"
+  ],
+  "author": "IMike",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/essencemike/theme-default/issues"
+  },
+  "homepage": "https://github.com/essencemike/theme-default#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-postcss": "^6.1.1",
+    "postcss-salad": "^1.0.5"
+  },
+  "dependencies": {}
+}

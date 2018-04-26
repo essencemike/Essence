@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import './var.css';
+
+/* DEPRECATED */
+.fade-in-linear-enter-active,
+.fade-in-linear-leave-active {
+  transition: var(--fade-linear-transition);
+}
+.fade-in-linear-enter,
+.fade-in-linear-leave,
+.fade-in-linear-leave-active {
+  opacity: 0;
+}
